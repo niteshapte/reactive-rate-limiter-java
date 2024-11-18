@@ -5,7 +5,7 @@ import java.time.Duration;
 public class Main {
 
 	public static void main(String[] args) {
-		ReactiveRateLimiter rateLimiter = new ReactiveRateLimiter(5, Duration.ofSeconds(1));
+	ReactiveRateLimiter rateLimiter = new ReactiveRateLimiter(5, Duration.ofSeconds(1)); // Max 5 request with duration of 1 second
 
         // Test tryAcquire
         for (int i = 0; i < 7; i++) {
